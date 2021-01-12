@@ -11,7 +11,7 @@ example, if you're using the flutter beta channel:
 
 ```console
 $ cd null_safety_examples/misc
-$ export PATH=/Users/kathyw/development/flutter/bin:$PATH
+$ export PATH=~/development/flutter/bin:$PATH
 $ flutter upgrade
 $ dart pub get
 $ dart analyze
