@@ -27,7 +27,11 @@ class Point {
         y = json['y'];
   // #docregion class-with-distanceTo
 
-  double distanceTo(Point other) {
+  double/*?*/ distanceTo(Point other) {
+    if (x == null || y == null || other?.x == null || other?.y == null) {
+      return null;
+    }
+    
     var dx = x - other.x;
     var dy = y - other.y;
     return sqrt(dx * dx + dy * dy);

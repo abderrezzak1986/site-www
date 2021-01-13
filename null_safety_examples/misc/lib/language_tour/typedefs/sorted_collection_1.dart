@@ -1,6 +1,6 @@
 // ignore_for_file: sort_constructors_first
 class SortedCollection {
-  Function compare;
+  Function/*!*/ compare;
 
   SortedCollection(int f(Object a, Object b)) {
     compare = f;

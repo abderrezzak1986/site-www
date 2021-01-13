@@ -5,6 +5,6 @@ class WannabeFunction {
 }
 
 var wf = WannabeFunction();
-var out = wf('Hi', 'there,', 'gang');
+String/*!*/ out = wf('Hi', 'there,', 'gang');
 
 main() => print(out);

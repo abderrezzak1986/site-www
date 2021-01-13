@@ -50,7 +50,7 @@ abstract class Builder<T> {
 }
 
 class PhoneNumber {
-  String number, label;
+  String/*!*/ number, label;
 }
 
 class PhoneNumberBuilder extends PhoneNumber with Builder<PhoneNumber> {
