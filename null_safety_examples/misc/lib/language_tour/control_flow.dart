@@ -2,7 +2,7 @@ typedef Pred0 = bool Function();
 typedef Void0 = void Function();
 
 class Candidate {
-  int yearsExperience;
+  late int yearsExperience;
   void interview() {}
 }
 

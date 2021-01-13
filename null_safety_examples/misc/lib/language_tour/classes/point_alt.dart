@@ -6,7 +6,7 @@
 ///
 // #docregion constructor-long-way
 class Point {
-  double x, y;
+  double? x, y;
 
   Point(double x, double y) {
     // There's a better way to do this, stay tuned.
@@ -26,7 +26,7 @@ class Point {
   // #enddocregion initializer-list
 
   // #docregion initializer-list-with-assert
-  Point.withAssert(this.x, this.y) : assert(x >= 0) {
+  Point.withAssert(double this.x, this.y) : assert(x >= 0) {
     print('In Point.withAssert(): ($x, $y)');
   }
   // #enddocregion initializer-list-with-assert

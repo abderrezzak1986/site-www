@@ -4,7 +4,7 @@ import 'dart:math';
 
 // #docregion constructor-initializer, named-constructor
 class Point {
-  double x, y;
+  double? x, y;
 
   // #enddocregion class-with-distanceTo, named-constructor
   // Syntactic sugar for setting x and y
@@ -27,13 +27,13 @@ class Point {
         y = json['y'];
   // #docregion class-with-distanceTo
 
-  double/*?*/ distanceTo(Point other) {
+  double? distanceTo(Point other) {
     if (x == null || y == null || other?.x == null || other?.y == null) {
       return null;
     }
     
-    var dx = x - other.x;
-    var dy = y - other.y;
+    var dx = x! - other.x!;
+    var dy = y! - other.y!;
     return sqrt(dx * dx + dy * dy);
   }
   // #docregion constructor-initializer, named-constructor

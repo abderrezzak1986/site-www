@@ -30,7 +30,7 @@ void miscDeclAnalyzedButNotTested() {
   {
     // #docregion specify-named-parameters
     /// Sets the [bold] and [hidden] flags ...
-    void enableFlags({bool/*!*/ bold, bool/*!*/ hidden}) {/*...*/}
+    void enableFlags({required bool bold, required bool hidden}) {/*...*/}
     // #enddocregion specify-named-parameters
 
     // #docregion use-named-parameters
@@ -80,12 +80,12 @@ void miscDeclAnalyzedButNotTested() {
 class Key {}
 
 abstract class Widget {
-  const Widget({Key/*!*/ key});
+  const Widget({required Key key});
 }
 
 class Scrollbar extends Widget {
   // #docregion required-named-parameters
-  const Scrollbar({Key/*!*/ key, @required Widget child})
+  const Scrollbar({required Key key, required Widget child})
       // #enddocregion required-named-parameters
       : super(key: key);
 }

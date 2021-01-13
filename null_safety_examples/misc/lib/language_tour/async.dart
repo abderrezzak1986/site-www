@@ -64,8 +64,8 @@ Future miscDeclAnalyzedButNotTested() async {
 
   {
     // Excerpt from dart-tutorials-samples/httpserver/number_thinker.dart
-    Stream requestServer;
-    Async1 handleRequest;
+    late Stream requestServer;
+    late Async1 handleRequest;
     // #docregion number_thinker
     Future main() async {
       // ...

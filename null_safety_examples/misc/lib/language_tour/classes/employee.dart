@@ -4,7 +4,7 @@ Map get defaultData => {}; // stub
 
 // #docregion
 class Person {
-  String firstName;
+  String? firstName;
 
   Person.fromJson(Map data) {
     print('in Person');
